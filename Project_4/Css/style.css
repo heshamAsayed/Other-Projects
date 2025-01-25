@@ -1,0 +1,324 @@
+/* start  variables */
+:root {
+    --color-f: #f1f1f1;
+    --color-c: #ccc;
+}
+
+/* end variable */
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+hr.sparat {
+    margin: 20px 0;
+    color: var(--color-f);
+    border: 1px solid var(--color-f);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-f);
+
+}
+
+
+body {
+    background-color: var(--color-f);
+}
+
+
+.container {
+    padding: 16px;
+}
+
+/* end global rules */
+
+/* start header */
+.header {
+    width: 100%;
+    text-align: center;
+    margin: 32px 0;
+}
+
+
+.header .container h1 {
+    font-family: "Raleway", sans-serif !important;
+    margin: 0 0 15px;
+}
+
+
+.header .container h1 b {
+    font-weight: bolder;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+
+.header .container p {
+    font-size: 15px;
+}
+
+
+.header .container p span {
+    color: white;
+    background-color: black;
+    padding: 2.3px 8px;
+}
+
+
+/* end header  */
+
+/* start the main  */
+.main {
+    margin: 15px 0;
+}
+
+.main .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.main .container .card {
+    margin: 0 0;
+    background-color: #fff !important;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+
+}
+
+.main .container .card img {
+    width: 100%;
+}
+
+.main .container .card .div-the-headers,
+.main .container .card .div-the-paragraphs {
+    padding: 0 16px;
+}
+
+
+.main .container .card .div-the-headers h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.main .container .card .div-the-headers h5 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.main .container .card .div-the-headers h5 span {
+    margin: 10px 0;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.main .container .card .div-the-paragraphs p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.main .container .card .div-the-paragraphs div {
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+
+.main .container .card .div-the-paragraphs div button {
+    padding: 12px 24px !important;
+    height: 3.5em;
+    border: 1px solid var(--color-c);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.main .container .card .div-the-paragraphs div button:hover {
+    background-color: var(--color-c);
+}
+
+.main .container .card .div-the-paragraphs div button h3 b,
+.main .container .card .div-the-paragraphs div p b {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.main .container .card .div-the-paragraphs div p {
+    font-size: 15px;
+    padding: 12px 24px;
+    margin: 0;
+}
+
+.main .container .card .div-the-paragraphs div p span {
+    color: white;
+    background-color: black;
+    padding: 0px 8px;
+    display: inline-block;
+}
+
+/* about me  */
+
+.main .container .content-about-me .card:last-child {
+    padding: 0;
+
+}
+
+
+.main .container .popular-posts h4 {
+    font-size: 20px;
+    padding: 20px 16px;
+    background-color: var(--color-f);
+}
+
+
+.main .container .popular-posts div.post:hover {
+    background-color: var(--color-c);
+}
+
+.main .container .popular-posts div.post div:first-child {
+    width: 69px;
+    float: left;
+    padding: 10px;
+
+}
+
+.main .container .popular-posts div.post div:first-child img {
+    width: 100%;
+
+}
+
+.main .container .popular-posts div.post div:last-child {
+    padding: 10px;
+}
+
+.main .container .popular-posts div.post div:last-child h5 {
+    font-size: 18px !important;
+}
+
+.main .container .popular-posts div.post div:last-child p {
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+
+/* end about me  */
+
+/* tags  */
+.main .container .tags .header {
+    background-color: var(--color-f);
+    padding: 26px 15px;
+    margin: 0;
+    text-align: left;
+}
+
+.main .container .tags .header h4 {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.main .container .tags .content-tags ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+
+.main .container .tags .content-tags ul li {
+    background-color: var(--color-f);
+    display: inline-block;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+.main .container .tags .content-tags ul li:first-child {
+    background-color: black;
+    color: white;
+}
+
+/* end the main  */
+
+/* start footer  */
+.footer .container {
+    background-color: #616161;
+    margin-top: 15px;
+    padding: 32px 16px;
+
+}
+
+
+.footer .container .background-footer>a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.footer .container .background-footer>a:first-child {
+    opacity: 0.3;
+}
+
+
+.footer .container .background-footer p {
+    margin: 15px 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* end footer  */
+
+
+
+/*===================================
+                media
+==================================*/
+@media  (min-width: 993px){
+    .main .container {
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:row;
+        gap:25px;
+    }
+    .main .container > div:first-child{
+        width: 66.666666%;
+        /* float:left; */
+    }
+    .main .container > div:last-child{
+        width: 33.333333%;
+        /* float:left; */
+    }
+
+}
+
+/*===============  media ============*/
