@@ -131,12 +131,21 @@ img {
 .container header nav.items {
     max-width: 200px;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .container header nav.items ul li {
     margin: 8px;
     cursor: pointer;
 }
+
+
+
+
 
 /* end header  */
 
@@ -250,6 +259,212 @@ img {
     } */
 }
 
+.links-mobile ul{
+    display: none;
+}
+div.list{
+    width: 60px;
+    cursor: pointer;
+    display: flex   ;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+    height: 20px;
+    
+}
+.bg{
+    position: absolute;
+    width: 79px;
+    height: 59px;
+    /* background-color: black; */
+    right: 41px;
+    top: 4px;
+    z-index: 1;
+}
+
+
+div.list div{
+    height: 3px;
+    width: 80%;
+    background-color: black;
+}
+
+div.list div.short{
+    width: 70%;
+    margin-left: auto;
+}
+
+
+@media screen and (max-width:680px) {
+    #home .home-content {
+        background-image: none;
+    }
+    #home .right{
+        display: none;
+    }
+    div.list {
+        display: flex;
+    }
+    #home .left{
+        width: 80% !important;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .links ul{
+        display: none;
+    }
+    .links-mobile{
+        position: absolute;
+        top: 99%;
+        right: 4%;
+        z-index: 20;
+        
+    }
+    .links-mobile ul{
+        display: none;
+        background-color: white;
+        border: 1px solid #c72092;
+        padding-left: 5px !important;
+        width: 70px;
+    }
+    
+    .links-mobile ul::after{
+        content: '';
+        position: absolute;
+        top: -21px;
+        right: 46px;
+        border: 10px solid transparent;
+        border-bottom-color: #c72092;
+    }
+    .links-mobile ul li{
+        display: block !important;
+        margin: 10px 0;
+    }
+
+    .links-mobile ul li:hover a::after{
+        content: "" ;
+        background-color: #c72092;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: 2px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        
+
+    }
+
+    .items ul {
+        margin-right: 6%;
+        width: 100%;
+    }
+
+    .items ul .profil-List a:hover .container .links-mobile ul{
+        display: none;
+    }
+    
+    .bg:hover ~ .links-mobile ul,.links-mobile:hover ul {
+        display: block;
+    }
+    .bg:hover + .list div,
+    .links-mobile:hover .list div{
+        width: 80%;
+        margin-left: 0;
+    }
+
+}
+
+
+/* @media screen and (max-width:680px) {
+    #home .home-content {
+        background-image: none;
+    }
+    #home .right{
+        display: none;
+    }
+    div.list {
+        display: flex;
+        z-index: 10;
+    }
+    #home .left{
+        width: 80% !important;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .links ul{
+        display: none;
+    }
+    .links-mobile ul{
+        display: none;
+        max-width: 112px !important;
+        position: absolute;
+        background-color: white;
+        margin: 8px;
+        right: -1%;
+        border: 1px solid #c72092;
+    }
+
+    .list:hover +  .links-mobile ul{
+        display: block;
+    }
+
+    .bg:hover ~ .links-mobile ul{
+        display: block;
+    }
+    div.list:hover  div{
+        width: 80%;
+        margin-right: auto;
+        margin-left: 0;
+        transition: 0.4s;
+    }
+
+    .links-mobile{
+        padding-top: 30px;
+        background-color: black;
+
+    }
+    .links-mobile ul li a {
+        margin-bottom: 5px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .links-mobile ul li:hover a::after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 110%;
+        height: 2px;
+        background-color: #c72092;
+    }
+    
+    .links-mobile ul li{
+        display: block !important;
+        margin: 10px 0;
+    }
+    .links-mobile ul::after{
+        content: '';
+        position: absolute;
+        top: -24px;
+        right: 51px;
+        border: 10px solid transparent;
+        border-bottom-color: #c72092;
+    }
+
+    .items ul {
+        margin-right: 6%;
+        width: 100%;
+    }
+
+    .items ul .profil-List a:hover .container .links-mobile ul{
+        display: none;
+    }
+    
+} */
 /* end Home  */
 
 /* start products  */
@@ -346,6 +561,8 @@ img {
     cursor: pointer;
     transition: 0.5s;
 }
+    
+
 
 #products .product-content .card .image-additions button:hover {
     color: #c72092;
