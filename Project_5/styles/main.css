@@ -158,7 +158,7 @@ img {
 }
 
 #home .home-content {
-    background-image: url(../images/bg1.png);
+    background-image: url(../images/bg-for-list1.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -272,7 +272,7 @@ div.list{
     height: 20px;
     
 }
-.bg{
+.bg-for-list{
     position: absolute;
     width: 79px;
     height: 59px;
@@ -316,7 +316,8 @@ div.list div.short{
     .links-mobile{
         position: absolute;
         top: 99%;
-        right: 4%;
+        /* right: 4%; */
+        margin-left: 120px;
         z-index: 20;
         
     }
@@ -365,11 +366,11 @@ div.list div.short{
         display: none;
     }
     
-    .bg:hover ~ .links-mobile ul,.links-mobile:hover ul {
+    .bg-for-list:hover ~ .links-mobile ul,.links-mobile:hover ul {
         display: block;
     }
-    .bg:hover + .list div,
-    .links-mobile:hover .list div{
+    .bg-for-list:hover ~ .list div,
+    .links-mobile:hover + .list div{
         width: 80%;
         margin-left: 0;
     }
@@ -410,7 +411,7 @@ div.list div.short{
         display: block;
     }
 
-    .bg:hover ~ .links-mobile ul{
+    .bg-for-list:hover ~ .links-mobile ul{
         display: block;
     }
     div.list:hover  div{
@@ -780,7 +781,7 @@ start   */
 
 
 .login{
-    background-image: url(../images/loging_bg.png);
+    background-image: url(../images/loging_bg-for-list.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
